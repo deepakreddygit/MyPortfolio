@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e02f6a57; /* Background color of your choice */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .back-link {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-size: 24px;
+            text-decoration: none;
+            color: #e02f6a;
+            z-index: 2;
+        }
+
+        h1 {
+            color: #e02f6a;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #e02f6a;
+            font-size: 18px; /* Adjust text size as needed */
+        }
+
+        .website-name {
+            color: #fff; /* Text color for website name */
+            font-size: 20px; /* Adjust text size as needed */
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Add animation to the image */
+        .animate-img {
+            animation: scaleImage 2s infinite; /* Apply the animation */
+        }
+
+        /* Define the animation */
+        @keyframes scaleImage {
+            0% {
+                transform: scale(1); /* Start with normal size */
+            }
+            50% {
+                transform: scale(1.2); /* Scale up at 50% of the animation */
+            }
+            100% {
+                transform: scale(1); /* Back to normal size at the end */
+            }
+        }
+
+        /* Media query for screens smaller than 768px (typical mobile devices) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px; /* Reduce padding for smaller screens */
+            }
+            h1 {
+                font-size: 18px; /* Adjust text size for smaller screens */
+            }
+            p {
+                font-size: 16px; /* Adjust text size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="back-link" href="https://deepakreddy.web.app" style="text-decoration: none;">
+        <img src="images/arrow.webp" height="40px" alt="Back">
+    </a>
+    <div class="container">
+        <img src="images/submitted.png" class="animate-img" height="50px">
+        <h1>Thank You for Your Submission!</h1>
+        <p>Your message has been received.</p>
+    </div>
+</body>
+</html>
