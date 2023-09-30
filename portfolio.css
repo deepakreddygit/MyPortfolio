@@ -793,6 +793,7 @@ Header
 }
 .contact-form .input-control:focus{
     border-color: var(--white-alpha-40) ;
+    
 }
 .contact-form textarea.input-control{
     height: 120px;
